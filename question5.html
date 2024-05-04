@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вопросник для любимого Никитки</title>
+    <style>
+        #teleportButton {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            border-radius: auto;
+            color: black;
+            cursor: pointer;
+        }
+        #staticButton {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            transform: translate(110%, 0%);
+            border-radius: auto;
+            color: black;
+            cursor: default;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="question-container">
+        <div class="button-container">
+            <h1>Вопрос 5: Вы хотите жёсткий подарок ?!?!?!??</h1>
+        </div>
+        <button class="yes-button" id="teleportButton" onclick="teleport()">ДА!!!!!</button>
+        <button class="no-button" id="staticButton">Нет</button>
+    </div>
+</div>
+    <script>
+        function teleport() {
+            var button = document.getElementById('teleportButton');
+            var newX = Math.floor(Math.random() * 1920); // Генерация X
+            var newY = Math.floor(Math.random() * 1080); // Генерация Y
+            button.style.left = newX + 'px'; //  X
+            button.style.top = newY + 'px'; //  Y
+        }
+    </script>
+    <script>
+    document.getElementById('staticButton').addEventListener('click', function() {
+      
+        window.location.href = 'final.html';
+    });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вопросник для любимого Никитки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="question-container">
+        <h1>Вопрос 1: Вы любите играть в раст?</h1>
+        <p>Ну что никитка тебе 16 лет и ты можешь печь кексы официально, поздравляю!!!!</p>
+        <div class="button-container">
+            <button class="yes-button" id="yes-button">Да</button>
+            <button class="no-button" id="no-button">Нет</button>
+            
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('yes-button').addEventListener('click', function() {
+            window.location.href = 'question2.html';
+        });
+    
+        document.getElementById('no-button').addEventListener('click', function() {
+            window.location.href = 'question2.html';
+        });
+    </script>
+    
+</body>
+</html>

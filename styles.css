@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.question-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.yes-button {
+    background-color: #4CAF50;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.no-button {
+    background-color: #f44336;
+    color: #fff;
+}
+
+#teleportButton {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border-radius: auto;
+    color: black;
+    cursor: pointer;
+}
+
